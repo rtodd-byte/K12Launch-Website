@@ -38,6 +38,44 @@ All files are plain HTML/CSS/JavaScript. No build step, no Node.js, no server re
 
 ---
 
+## Publishing Changes to GitHub
+
+Files are edited in the workspace folder, then copied into the GitHub Desktop repo folder before committing.
+
+**Edit files here (workspace):**
+```
+c:\Users\treel\tutor management company workspace\website\site-code\
+```
+
+**GitHub Desktop watches this folder:**
+```
+C:\Users\treel\Documents\GitHub\K12Launch-Website\
+```
+
+### Every time you want to publish changes:
+
+**Step 1 — Copy updated files into the GitHub repo folder**
+
+Run this in PowerShell:
+```powershell
+Copy-Item -Path "c:\Users\treel\tutor management company workspace\website\site-code\*" -Destination "C:\Users\treel\Documents\GitHub\K12Launch-Website\" -Recurse -Force
+```
+
+Or ask Claude to do it — just say "copy the files to GitHub Desktop."
+
+**Step 2 — Open GitHub Desktop**
+
+The changed files will appear in the left panel automatically.
+
+**Step 3 — Commit and push**
+1. Fill in the Summary field with a short description of what changed
+2. Click **Commit to main**
+3. Click **Push origin**
+
+The live site on GitHub Pages will update within 1–2 minutes.
+
+---
+
 ## ACTION REQUIRED — When the Lovable App URL Changes
 
 The "Log In" button in the navigation of all 10 HTML pages currently links to:
@@ -123,22 +161,14 @@ Update any of these hex values to match your exact logo/brand colors. Every butt
 
 ---
 
-## Replacing the Logo
+## Logo
 
-The current logo is a CSS text element (`K12Launch`). To replace it with your actual logo image:
+The logo image is `assets/k12launch-brand-logo.png`. It appears in both the sticky nav header and the footer on every page (18 total instances across 10 HTML files).
 
-1. Add your logo file (e.g., `logo.png` or `logo.svg`) to `site-code/` (or a subfolder like `site-code/img/`)
-2. Open any HTML file and find all instances of:
-   ```html
-   <a href="index.html" class="nav-logo"><span class="nav-logo-text">K12<span>Launch</span></span></a>
-   ```
-3. Replace the inner span with an `<img>` tag:
-   ```html
-   <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="K12Launch" height="36" /></a>
-   ```
-4. Repeat in all 10 HTML files (nav header + footer in each)
+- **Nav:** displays in its original colors
+- **Footer:** rendered white via `filter: brightness(0) invert(1)` in `css/styles.css` (dark background)
 
-The logo appears in both the sticky header and the footer on every page.
+To swap the logo file, replace `assets/k12launch-brand-logo.png` with a new file of the same name. No HTML changes needed.
 
 ---
 
@@ -233,7 +263,7 @@ These badges are plain HTML and can be removed once features ship. Search for `b
 ## Before Going Live Checklist
 
 - [ ] Update brand colors in `css/styles.css` if hex values differ from current logo
-- [ ] Replace CSS logo text with actual logo image file
+- [x] Replace CSS logo text with actual logo image file (`assets/k12launch-brand-logo.png`)
 - [ ] Add real tutor headshots to `about.html` (placeholders are currently colored divs with initials)
 - [ ] Wire contact forms to Formspree or another handler
 - [ ] Set up `hello@k12launch.com` and `katie@k12launch.com` email addresses

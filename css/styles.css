@@ -587,9 +587,13 @@ p.lead { font-size: 1.15rem; color: var(--text); }
   white-space: nowrap;
 }
 .pricing-tier   { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
-.pricing-price  { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 800; color: var(--text); line-height: 1; }
-.pricing-price sup { font-size: 1.25rem; vertical-align: top; margin-top: 8px; }
-.pricing-price span { font-size: 0.95rem; font-weight: 500; color: var(--text-muted); }
+.pricing-price  { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 800; color: var(--text); line-height: 1; display: flex; align-items: flex-start; gap: 2px; }
+.pricing-price sup { font-size: 1.25rem; line-height: 1; margin-top: 6px; }
+.pricing-price span:first-of-type { line-height: 1; }
+.pricing-price span:last-child { font-size: 0.95rem; font-weight: 500; color: var(--text-muted); align-self: flex-end; margin-bottom: 4px; }
+/* Billing toggle checked state */
+#billing-toggle:checked + span { background: var(--secondary) !important; }
+#billing-toggle:checked + span + span { left: calc(100% - 23px) !important; }
 .pricing-desc   { font-size: 0.88rem; color: var(--text-muted); margin: 12px 0 24px; }
 .pricing-divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
 .pricing-features { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
@@ -893,6 +897,7 @@ p.lead { font-size: 1.15rem; color: var(--text); }
 }
 .footer-brand .nav-logo-text { color: #fff; }
 .footer-brand .nav-logo-text span { color: var(--accent); }
+.footer-brand .nav-logo img { filter: brightness(0) invert(1); }
 .footer-tagline { font-size: 0.88rem; margin: 12px 0 20px; }
 .footer-social { display: flex; gap: 12px; }
 .footer-social a {

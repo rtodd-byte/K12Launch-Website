@@ -80,7 +80,10 @@
         Replace the setTimeout below with a real fetch() to your backend,
         Formspree, EmailJS, or GoDaddy form handler.
 
-        Example with Formspree:
+        All form submissions should route to: treel1977@yahoo.com
+        Do NOT display this address on the website — use hello@k12launch.com as the public contact.
+
+        Example with Formspree (set receiving email to treel1977@yahoo.com in Formspree dashboard):
         const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -124,8 +127,11 @@
 
   toggle.addEventListener('change', () => {
     const isAnnual = toggle.checked;
-    const label = document.getElementById('billing-label');
-    if (label) label.textContent = isAnnual ? 'Billed annually (save 20%)' : 'Billed monthly';
+
+    const leftLabel  = document.getElementById('billing-label-left');
+    const rightLabel = document.getElementById('billing-label');
+    if (leftLabel)  leftLabel.textContent  = isAnnual ? 'Annually' : 'Monthly';
+    if (rightLabel) rightLabel.textContent = isAnnual ? 'Save 20% — billed annually' : 'Annual (save 20%)';
 
     Object.keys(prices).forEach(tier => {
       const el = document.getElementById(`price-${tier}`);

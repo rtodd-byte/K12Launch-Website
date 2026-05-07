@@ -12,14 +12,14 @@
 <header class="nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><span class="nav-logo-text">K12<span>Launch</span></span></a>
+      <a href="index.html" class="nav-logo"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" /></a>
       <nav class="nav-links">
         <a href="for-tutors.html">For Tutors</a><a href="for-parents.html">For Parents</a>
         <a href="platform.html">Platform</a><a href="pricing.html">Pricing</a>
         <a href="about.html">About</a><a href="resources.html">Resources</a>
       </nav>
       <div class="nav-actions">
-        <a href="https://k12launchstudent.lovable.app" class="nav-login">Log In</a>
+        <a href="https://k12launchstudent.lovable.app" target="_blank" rel="noopener noreferrer" class="nav-login">Log In</a>
         <a href="contact.html" class="btn btn-primary btn-sm">Get Started →</a>
         <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -29,7 +29,7 @@
     <a href="for-tutors.html">For Tutors</a><a href="for-parents.html">For Parents</a>
     <a href="platform.html">Platform</a><a href="pricing.html">Pricing</a>
     <a href="about.html">About</a><a href="resources.html">Resources</a>
-    <a href="https://k12launchstudent.lovable.app">Log In</a>
+    <a href="https://k12launchstudent.lovable.app" target="_blank" rel="noopener noreferrer">Log In</a>
     <a href="contact.html" class="btn btn-primary">Get Started →</a>
   </nav>
 </header>
@@ -43,6 +43,14 @@
 </section>
 
 <!-- FORMS -->
+<!--
+  EMAIL ROUTING — INTERNAL USE ONLY
+  Both forms below submit to: treel1977@yahoo.com (via Formspree or equivalent service)
+  The public-facing brand email hello@k12launch.com is displayed on the page.
+  DO NOT display treel1977@yahoo.com anywhere on the website.
+  To wire up: set each form's action to your Formspree endpoint, e.g.:
+    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+-->
 <section class="section">
   <div class="container">
     <div class="grid-2" style="gap:48px;align-items:start">
@@ -57,6 +65,7 @@
           <h3>Tutor Application</h3>
           <p class="panel-desc">All fields marked * are required.</p>
 
+          <!-- Routes to: treel1977@yahoo.com — wire via Formspree before launch -->
           <form data-form="tutor-application" class="form-stack" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -181,6 +190,7 @@
           <h3>Parent Intake Form</h3>
           <p class="panel-desc">There is no charge to parents for the K12Launch matching service. All fields marked * are required.</p>
 
+          <!-- Routes to: treel1977@yahoo.com — wire via Formspree before launch -->
           <form data-form="parent-intake" class="form-stack" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -326,7 +336,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="nav-logo-text">K12<span>Launch</span></span></a><p class="footer-tagline">The platform built for literacy tutors.</p></div>
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" /></a><p class="footer-tagline">The platform built for literacy tutors.</p></div>
       <div class="footer-col"><h5>For Tutors</h5><ul><li><a href="for-tutors.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Apply Now</a></li></ul></div>
       <div class="footer-col"><h5>For Parents</h5><ul><li><a href="for-parents.html">Find a Tutor</a></li><li><a href="contact.html#parent-intake">Request a Tutor</a></li></ul></div>
       <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="resources.html">Resources</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>

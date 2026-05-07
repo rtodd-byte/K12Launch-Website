@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tutor Subscription Pricing — Starter, Growth & Pro | K12Launch</title>
-  <meta name="description" content="K12Launch plans start at $49/month for literacy tutors. Includes structured assessments, AI lesson builder, and student management. 14-day free trial, no credit card required." />
+  <meta name="description" content="K12Launch plans start at $49/month for literacy tutors. Includes structured assessments, AI lesson builder, and student management. Simple, transparent pricing." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -12,14 +12,14 @@
 <header class="nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><span class="nav-logo-text">K12<span>Launch</span></span></a>
+      <a href="index.html" class="nav-logo"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" /></a>
       <nav class="nav-links">
         <a href="for-tutors.html">For Tutors</a><a href="for-parents.html">For Parents</a>
         <a href="platform.html">Platform</a><a href="pricing.html" class="active">Pricing</a>
         <a href="about.html">About</a><a href="resources.html">Resources</a>
       </nav>
       <div class="nav-actions">
-        <a href="https://k12launchstudent.lovable.app" class="nav-login">Log In</a>
+        <a href="https://k12launchstudent.lovable.app" target="_blank" rel="noopener noreferrer" class="nav-login">Log In</a>
         <a href="contact.html" class="btn btn-primary btn-sm">Get Started →</a>
         <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -29,7 +29,7 @@
     <a href="for-tutors.html">For Tutors</a><a href="for-parents.html">For Parents</a>
     <a href="platform.html">Platform</a><a href="pricing.html">Pricing</a>
     <a href="about.html">About</a><a href="resources.html">Resources</a>
-    <a href="https://k12launchstudent.lovable.app">Log In</a>
+    <a href="https://k12launchstudent.lovable.app" target="_blank" rel="noopener noreferrer">Log In</a>
     <a href="contact.html" class="btn btn-primary">Get Started →</a>
   </nav>
 </header>
@@ -37,13 +37,12 @@
 <!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <div class="hero-eyebrow" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.25)">14-day free trial · No credit card required</div>
     <h1>Simple, transparent pricing.</h1>
     <p class="lead">Every plan includes the core platform — assessments, roster management, and AI lesson building. Upgrade when you're ready for more.</p>
 
     <!-- Billing toggle -->
     <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin-top:8px">
-      <span style="color:rgba(255,255,255,0.7);font-size:.9rem">Monthly</span>
+      <span id="billing-label-left" style="color:rgba(255,255,255,0.7);font-size:.9rem">Monthly</span>
       <label style="position:relative;display:inline-block;width:48px;height:26px;cursor:pointer">
         <input type="checkbox" id="billing-toggle" style="opacity:0;width:0;height:0">
         <span style="position:absolute;inset:0;background:rgba(255,255,255,0.2);border-radius:13px;transition:.3s"></span>
@@ -62,7 +61,7 @@
         <div class="pricing-tier">Starter</div>
         <div class="pricing-price"><sup>$</sup><span id="price-starter">49</span><span>/mo</span></div>
         <p class="pricing-desc">For solo tutors building and validating their practice.</p>
-        <a href="contact.html" class="btn btn-outline" style="margin-bottom:24px;width:100%;justify-content:center">Start Free Trial</a>
+        <a href="contact.html" class="btn btn-outline" style="margin-bottom:24px;width:100%;justify-content:center">Apply Now</a>
         <hr class="pricing-divider"/>
         <div class="pricing-features">
           <div class="pricing-feature"><span class="check">✓</span> Up to 10 active students</div>
@@ -192,8 +191,8 @@
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-question">Is there really a free trial? <span class="faq-icon">+</span></button>
-        <div class="faq-answer">Yes. Every new tutor subscriber gets a 14-day free trial with full access to their selected plan. No credit card required to start. If you were a beta tester, you may have received a special early-adopter rate — check your email.</div>
+        <button class="faq-question">How do I get started? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">Submit a tutor application on our contact page. We review every application and respond within one business day. Once approved, you'll receive access to set up your account and choose your plan.</div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Can I switch plans at any time? <span class="faq-icon">+</span></button>
@@ -223,23 +222,11 @@
   </div>
 </section>
 
-<!-- EARLY ADOPTER -->
-<section class="section section--gray">
-  <div class="container">
-    <div style="max-width:640px;margin:0 auto;text-align:center">
-      <div class="section-label">Beta Testers</div>
-      <h2>Thank you for helping us build this.</h2>
-      <p style="margin-bottom:28px">If you were one of our 5 original beta testers, you've already seen what the platform can do. As a thank-you for your time and feedback, beta participants receive a locked-in early-adopter rate when they convert to a paid plan. Check your email for your personal discount code.</p>
-      <a href="contact.html" class="btn btn-primary">Claim Your Early-Adopter Rate →</a>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="cta-band">
   <div class="container">
-    <h2>Start your free trial today.</h2>
-    <p>14 days free. No credit card. Cancel anytime. Built for literacy educators who are serious about their practice.</p>
+    <h2>Ready to get started?</h2>
+    <p>Apply as a tutor subscriber and start managing your practice the right way.</p>
     <div class="btn-group">
       <a href="contact.html" class="btn btn-primary btn-lg">Apply as a Tutor →</a>
       <a href="contact.html" class="btn btn-secondary btn-lg">Talk to Us First</a>
@@ -250,7 +237,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="nav-logo-text">K12<span>Launch</span></span></a><p class="footer-tagline">The platform built for literacy tutors.</p></div>
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" /></a><p class="footer-tagline">The platform built for literacy tutors.</p></div>
       <div class="footer-col"><h5>For Tutors</h5><ul><li><a href="for-tutors.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Apply Now</a></li></ul></div>
       <div class="footer-col"><h5>For Parents</h5><ul><li><a href="for-parents.html">Find a Tutor</a></li><li><a href="contact.html#parent-intake">Request a Tutor</a></li></ul></div>
       <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="resources.html">Resources</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>

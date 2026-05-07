@@ -253,7 +253,7 @@ p.lead { font-size: 1.15rem; color: var(--text); }
   flex-shrink: 0;
 }
 .nav-logo img {
-  height: 38px;
+  height: 80px;
   width: auto;
 }
 .nav-logo-text {

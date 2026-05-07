@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logo Size Preview</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; padding: 40px; }
+    .label { font-size: 13px; color: #666; margin-bottom: 8px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+    .nav-bar {
+      display: flex; align-items: center; padding: 0 32px;
+      background: #fff; border-radius: 10px; margin-bottom: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.1);
+    }
+    .nav-bar nav { display: flex; gap: 28px; margin-left: 48px; }
+    .nav-bar nav a { text-decoration: none; color: #333; font-size: 15px; }
+    .nav-bar .actions { margin-left: auto; display: flex; gap: 16px; align-items: center; }
+    .btn { background: #E67E22; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 14px; }
+    .login { color: #1A5276; text-decoration: none; font-size: 14px; }
+    .size-38 { height: 38px; width: auto; }
+    .size-52 { height: 52px; width: auto; }
+    .size-64 { height: 64px; width: auto; }
+    .size-80 { height: 80px; width: auto; }
+    .note { font-size: 12px; color: #999; margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+  <div class="label">Current — 38px (too small)</div>
+  <div class="nav-bar" style="height:70px">
+    <a href="#"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" class="size-38" /></a>
+    <nav>
+      <a href="#">For Tutors</a>
+      <a href="#">For Parents</a>
+      <a href="#">Platform</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="actions">
+      <a href="#" class="login">Log In</a>
+      <a href="#" class="btn">Get Started →</a>
+    </div>
+  </div>
+  <div class="note">↑ This is what's live right now</div>
+
+  <br />
+
+  <div class="label">Updated — 80px (proposed)</div>
+  <div class="nav-bar" style="height:96px">
+    <a href="#"><img src="assets/k12launch-brand-logo.png" alt="K12Launch" class="size-80" /></a>
+    <nav>
+      <a href="#">For Tutors</a>
+      <a href="#">For Parents</a>
+      <a href="#">Platform</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="actions">
+      <a href="#" class="login">Log In</a>
+      <a href="#" class="btn">Get Started →</a>
+    </div>
+  </div>
+  <div class="note">↑ This is the updated size</div>
+
+</body>
+</html>

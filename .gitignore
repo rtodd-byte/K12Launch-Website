@@ -1,0 +1,54 @@
+# ── Windows ───────────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── VS Code ───────────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+# ── Other editors ─────────────────────────────────────────────
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# ── Node / npm (if added later) ───────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# ── Build outputs (if build tools are added later) ────────────
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ── Environment & secrets (never commit these) ────────────────
+.env
+.env.*
+.env.local
+.env.production
+*.pem
+*.key
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/

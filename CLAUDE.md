@@ -48,9 +48,17 @@ The subdomain is tool-agnostic. Three realistic paths:
 | Old term | Correct term |
 |----------|-------------|
 | "The platform" / "our platform" | "Launch HQ" (back-office tools) or the specific tool name |
-| "Platform" (nav link) | "Launch HQ" |
-| "platform.html" | Needs to be renamed/rewritten as the Launch HQ page |
-| "Student platform" | "K-12 Launch Student App" |
+| "Platform" (nav link) | Removed from nav entirely — content moved into Educators page |
+| "platform.html" | Needs to be rewritten; not linked from nav |
+| "Student platform" | "K12Launch Student App" |
+| "For Tutors" (nav) | "Educators" |
+| "For Parents" (nav) | "Parents" |
+| "Pricing" (nav) | Removed from nav — pricing content lives on the Educators page |
+| "K-12 Launch" | "K12Launch" (no hyphen, no space) |
+| "tutor" / "tutors" in copy | "educator" / "educators" |
+| "Find a Tutor" | "Find an Educator" |
+| "Request a Tutor" | "Request an Educator" |
+| "Apply as a Tutor" | "Apply as an Educator" |
 
 **No emoji in copy or icons.** Katie flagged emoji as looking "very AI." Use letter-based icons in brand-color boxes instead (e.g., `R` for Roster, `A` for Assessments, `AI` for Lesson Builder, `$` for Invoicing).
 

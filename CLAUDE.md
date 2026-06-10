@@ -81,18 +81,25 @@ The subdomain is tool-agnostic. Three realistic paths:
 
 **Always write website edits directly to this repo.** Do not write to the working folder and copy over — that creates a sync problem.
 
-### Pages that still need updating (as of 2026-05-21)
+### Pages updated (as of 2026-06-09)
 
-| File | What's needed |
-|------|--------------|
-| `platform.html` | Rename concept to "Launch HQ," rewrite content to reflect back-office framing |
-| `for-tutors.html` | Remove old "platform" language; update pricing table to match current tiers |
-| `for-parents.html` | Remove "platform" references; confirm parent-no-subscription framing |
-| `about.html` | Remove "platform" references; LLP section OK to keep here |
-| Log In link (all pages) | Update from `k12launchstudent.lovable.app` to `app.k12launch.com` once subdomain is live |
+All primary pages have been updated. Outstanding items:
+
+| File | Status | What's needed |
+|------|--------|--------------|
+| `platform.html` | Low priority — not in nav | Rewrite or redirect to `for-tutors.html#features` |
+| Log In link (all pages) | Pending DNS | Update from `k12launchstudent.lovable.app` to `app.k12launch.com` once subdomain is live |
 
 ### What was committed on 2026-05-21
 - `index.html` — hero, proof bar, audience panels, feature cards, pricing preview, footer
 - `pricing.html` — tier cards, comparison table, Student App callout, nav
-- `css/styles.css` — logo height fix (`height: 52px` on `.nav-logo img`)
-- Commit message: "Update homepage and pricing with Katie's feedback"
+- `css/styles.css` — logo height fix (`height: 62px` on `.nav-logo img`)
+- All other HTML files — nav updated (Educators/Parents), footer taglines updated, tutor→educator
+
+### Changes staged but not yet committed (as of 2026-06-09)
+- `index.html` — removed How It Works, removed Pricing Preview, CTA → "Learn how to join →", footer tagline shortened, Company list cleaned
+- `about.html` — full rewrite: new hero, Origin (Katie only), updated bios, LLP section removed
+- `resources.html` — full rewrite: Coming Soon view with six live community platform tiles
+- `for-tutors.html`, `for-parents.html`, `contact.html`, `platform.html`, `pricing.html` — footer logo → transparent, tagline updated
+- `assets/k12launch-brand-logo-web.png` — new (nav logo, color on white)
+- `assets/k12launch-brand-logo-transparent.png` — new (footer logo, transparent background for CSS invert)

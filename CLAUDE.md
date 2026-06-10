@@ -96,7 +96,7 @@ All primary pages have been updated. Outstanding items:
 - `css/styles.css` — logo height fix (`height: 62px` on `.nav-logo img`)
 - All other HTML files — nav updated (Educators/Parents), footer taglines updated, tutor→educator
 
-### Changes staged but not yet committed (as of 2026-06-09)
+### What was committed on 2026-06-10
 - `index.html` — removed How It Works, removed Pricing Preview, CTA → "Learn how to join →", footer tagline shortened, Company list cleaned
 - `about.html` — full rewrite: new hero, Origin (Katie only), updated bios, LLP section removed
 - `resources.html` — full rewrite: Coming Soon view with six live community platform tiles

@@ -52,3 +52,7 @@ build/
 # ── Logs ──────────────────────────────────────────────────────
 *.log
 logs/
+
+# ── K12Launch session reference files (local use only) ────────
+K12 Launch Website_updates-*.md
+K12 Launch Website_Updates-*.md

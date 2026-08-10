@@ -88,13 +88,18 @@ All primary pages have been updated. Outstanding items:
 | File | Status | What's needed |
 |------|--------|--------------|
 | `platform.html` | Low priority — not in nav | Rewrite or redirect to `for-tutors.html#features` |
-| Log In link (all pages) | Pending DNS | Update from `k12launchstudent.lovable.app` to `app.k12launch.com` once subdomain is live |
+| Log In link (all pages) | **Done 2026-08-09** | Now "Login to Educator App" → `https://educator.app.k12launch.com/`. Note: target domain is 3-level (`educator.app.k12launch.com`), not the originally planned 2-level `app.k12launch.com` — confirm GoDaddy CNAME record is set up for `educator.app`, not `app` |
 
 ### What was committed on 2026-05-21
 - `index.html` — hero, proof bar, audience panels, feature cards, pricing preview, footer
 - `pricing.html` — tier cards, comparison table, Student App callout, nav
 - `css/styles.css` — logo height fix (`height: 62px` on `.nav-logo img`)
 - All other HTML files — nav updated (Educators/Parents), footer taglines updated, tutor→educator
+
+### What was committed on 2026-08-09 (commit `7d76130`)
+- All 9 live HTML pages — removed every "Get Started →" button (nav, mobile nav, hero, bottom CTA); Log In button renamed "Login to Educator App" and re-pointed to `https://educator.app.k12launch.com/` (incl. `index.html` footer link)
+- `platform.html` — "Try the Platform →" renamed "Try the App →" and re-pointed to the same URL (hero + bottom CTA); removed "Try It Now →" and "Try the Lesson Builder →" buttons
+- Full detail: `K12 Launch Website_updates-08-09-2026.md` in the workspace folder
 
 ### What was committed on 2026-06-10
 - `index.html` — removed How It Works, removed Pricing Preview, CTA → "Learn how to join →", footer tagline shortened, Company list cleaned

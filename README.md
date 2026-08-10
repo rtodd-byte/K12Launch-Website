@@ -76,21 +76,17 @@ The live site on GitHub Pages will update within 1–2 minutes.
 
 ---
 
-## ACTION REQUIRED — When the Lovable App URL Changes
+## Login Button — Current Status (updated 2026-08-09)
 
-The "Log In" button in the navigation of all 10 HTML pages currently links to:
+The nav "Log In" button on all 9 live HTML pages (`pricing.html` is a redirect stub with no nav) now reads **"Login to Educator App"** and links to:
 
 ```
-https://k12launchstudent.lovable.app
+https://educator.app.k12launch.com/
 ```
 
-When Todd confirms the Lovable app URL has changed (or when the app moves to `app.k12launch.com`), perform a find-and-replace across all HTML files:
+This replaced the old `https://k12launchstudent.lovable.app` link. Also note: the "Get Started →" button that used to sit next to it has been **removed sitewide** (see `K12 Launch Website_updates-08-09-2026.md` in the workspace folder for the full change log).
 
-- **Find:** `https://k12launchstudent.lovable.app`
-- **Replace with:** the new URL (e.g., `https://app.k12launch.com`)
-- **Files affected:** all 10 `.html` files (23 total link occurrences)
-
-This is a one-step change. Do not change the references to `app.k12launch.com` inside the body text of `privacy.html` and `terms.html` — those are domain name references, not links.
+**Still open:** confirm the `educator.app.k12launch.com` CNAME/DNS record is actually live in GoDaddy (see "Setting Up the app.k12launch.com Subdomain" below — the domain name has changed from a 2-level to a 3-level subdomain, so that section needs a re-check). Also, `privacy.html` and `terms.html` still reference the platform domain as plain `app.k12launch.com` in their legal body text — those were intentionally left untouched and should be reconciled once the domain is finalized.
 
 ---
 
@@ -206,15 +202,15 @@ GoDaddy cPanel includes PHP. You can create a simple `submit.php` handler and po
 
 ---
 
-## Setting Up the app.k12launch.com Subdomain
+## Setting Up the educator.app.k12launch.com Subdomain
 
-The nav "Log In" button links to `https://app.k12launch.com`. To activate this:
+The nav "Login to Educator App" button links to `https://educator.app.k12launch.com/` (updated 2026-08-09 — previously planned as the 2-level `app.k12launch.com`). To activate this:
 
 1. GoDaddy → Domains → Manage → DNS
-2. Add a **CNAME record**: `app` → your Lovable app's domain (e.g., `k12launchstudent.lovable.app`)
+2. Add a **CNAME record**: name `educator.app` → your Lovable app's domain (e.g., `k12launchstudent.lovable.app`)
 3. Or add an **A record** pointing to whatever server your platform app runs on after migration
 
-Once DNS is live, `app.k12launch.com` will route to the platform without changing any links in the site code.
+Once DNS is live, `educator.app.k12launch.com` will route to the platform without changing any links in the site code.
 
 ---
 
